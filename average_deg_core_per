@@ -1,0 +1,26 @@
+core_size = 20
+periphery_size = 180
+core_core_prob = 0.6
+periphery_periphery_prob = 0.1
+periphery_core_prob = 0.35
+num_graphs = 250
+
+C = core_size * (core_size - 1) * core_core_prob / 2
+P = periphery_size * (periphery_size - 1) * periphery_periphery_prob / 2
+Q = periphery_size * core_size * periphery_core_prob
+
+N = core_size + periphery_size
+E = C + P + Q
+
+average_degree = 2 * E / N
+
+Plugging in the values, we get:
+
+C = 20 * 19 * 0.6 / 2 = 114
+P = 180 * 179 * 0.1 / 2 = 1602
+Q = 180 * 20 * 0.35 = 1260
+
+N = 200
+E = 114 + 1602 + 1260 = 2976
+
+average_degree = 2 * E / N ≈ 29.76

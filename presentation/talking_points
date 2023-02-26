@@ -1,0 +1,15 @@
+The idea behind, recognizing a core structure.
+The technology behind (1L Log_Reg)
+The technology behind (4 layers)
+The limitations of this NN -> It takes unprocessed data with fixed lenght! 
+The problem with plotting graphs, resolution, time of generation, time of training.
+The idea of adjacency images.
+The line scrambling - > scrambled matrix
+Problems encountered, giant component... but fully connected?
+The results with Log_Reg, and 4-layers with 100% accuracy
+Why 100 accuracy? The average degree
+The final model and accuracy.
+The future, community detection and surpassing the limit of images and resolution.
+1)A network that integrates edgelists directly (by whitening out them at the end, but what is the max size?), but will hardly work for community detection.
+2)A network that takes images of graphs with fixated resolution high enough.
+Bonus: idea for CD, we can randomly choose communities (in VERY different ways) to increase the data size! The difficoult part is obtaining good communities to train the model with.
